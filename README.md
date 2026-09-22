@@ -17,7 +17,7 @@ Simulador visual de redes definidas por software (SDN) con:
 ## 🚀 Quick start
 
 ```bash
-git clone https://github.com/MituNakan/sdn-playground.git
+git clone https://github.com/MitNak25/sdn-playground.git
 cd sdn-playground
 docker compose build
 docker compose up
