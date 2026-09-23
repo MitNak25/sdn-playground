@@ -1,8 +1,8 @@
 import os
-from mininet.net import Mininet
-from mininet.node import RemoteController, OVSKernelSwitch
-from mininet.topo import Topo
 from mininet.cli import CLI
+from mininet.net import Mininet
+from mininet.node import OVSKernelSwitch, RemoteController
+from mininet.topo import Topo
 
 
 class SimpleTopo(Topo):

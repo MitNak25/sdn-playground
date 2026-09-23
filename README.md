@@ -14,4 +14,4 @@ Minimal Dockerized SDN playground with a Ryu OpenFlow 1.3 learning switch and a 
 docker compose up --build
 ```
 
-The Mininet container runs `pingAll` and opens its CLI. Use `nodes`, `net`, or `h1 ping h2`; exit with `exit`. The controller listens on port 6633. This repository does not yet include the Electron/Vue UI described by the original README.
+The Mininet container runs `pingAll` and opens its CLI. Use `nodes`, `net`, or `h1 ping h2`; exit with `exit`. The controller listens on port 6633. The original Electron/Vue UI is not included in this minimal backend scaffold.
