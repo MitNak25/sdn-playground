@@ -1,23 +1,17 @@
-# sdn-playground
-Simulador visual de redes SDN con Mininet, Ryu y Electron
-# SDN‑Playground
+# SDN Playground
 
-Simulador visual de redes definidas por software (SDN) con:
+Minimal Dockerized SDN playground with a Ryu OpenFlow 1.3 learning switch and a Mininet topology.
 
-- **Mininet** para crear topologías virtuales.
-- **Ryu** como controlador OpenFlow.
-- **Electron + Vue** como interfaz gráfica multiplataforma.
+## Requirements
 
-## 📦 Requisitos
+- Docker 24+
+- Docker Compose v2
+- Linux host recommended; Mininet requires privileged networking
 
-- Docker ≥ 24
-- Docker‑Compose (v2)
-- (Opcional) Git para clonar el repo
-
-## 🚀 Quick start
+## Run
 
 ```bash
-git clone https://github.com/MitNak25/sdn-playground.git
-cd sdn-playground
-docker compose build
-docker compose up
+docker compose up --build
+```
+
+The Mininet container runs `pingAll` and opens its CLI. Use `nodes`, `net`, or `h1 ping h2`; exit with `exit`. The controller listens on port 6633. This repository does not yet include the Electron/Vue UI described by the original README.

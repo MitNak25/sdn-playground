@@ -1,0 +1,15 @@
+services:
+  controller:
+    build: ./controller
+    command: ["ryu-manager", "app.py"]
+    ports:
+      - "6633:6633"
+      - "8080:8080"
+  mininet:
+    build: ./mininet
+    privileged: true
+    depends_on:
+      - controller
+    environment:
+      RYU_HOST: controller
+    command: ["python3", "topology.py"]
